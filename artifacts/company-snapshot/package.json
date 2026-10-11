@@ -1,0 +1,10 @@
+{
+  "name": "@workspace/company-snapshot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd ../.. && python3 -m streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.baseUrlPath \"${BASE_PATH#/}\" --server.headless true --browser.gatherUsageStats false",
+    "typecheck": "cd ../.. && python3 -m py_compile app.py",
+    "build": "cd ../.. && python3 -m py_compile app.py"
+  }
+}

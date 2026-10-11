@@ -1,0 +1,7 @@
+- [Finviz export behavior](finviz-export-behavior.md) — saved custom presets require the custom export view; verify live formatting against assignment assumptions.
+- [Streamlit preview checks](streamlit-preview-checks.md) — preview snapshots can capture a blank startup state before the app finishes rendering.
+- [Read-only Git checks](git-readonly-checks.md) — diff inspection can trigger protected index writes; committed-file reads avoid that refresh.
+- [Streamlit missing cells](streamlit-missing-cells.md) — native placeholders override missing-cell text without changing numeric data or sorting.
+- [Workspace publish checks](workspace-publish-checks.md) — unused Node dependencies can block the Python dashboard's publishing security check.
+- [Publishing instruction](publishing-instruction.md) — never publish this app or suggest publishing it.
+- [Editor navigation](editor-navigation.md) — Shell was found through the + beside Preview, not within the Tools pane.

@@ -1,0 +1,30 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "e6l6H2D-2nqeoUw5EWI_6"
+uri = "file://data/raw_export.csv"
+type = "table"
+title = "Raw Finviz export"
+description = "Original CSV downloaded from your saved semiconductor screener preset; 22 stocks."
+logical_id = "4e3d03f7-9502-498a-9e1d-5f9d681d4d04"
+content_hash = "sha256:c321479a1d0a61e0059da2e762585d0d180f5a0b82ba10e3c4cad9d9b8400fa6"
+size = 3604
+mtime_ms = 1791686629168
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:5a123519-bfa9-4418-b205-ddee6fdf2ee8/4e3d03f7-9502-498a-9e1d-5f9d681d4d04/548a2bcf-f7b4-4676-8646-a3c0602b1fc3"
+storage_version_token = "1791686650133787"
+content_type = "text/csv"
+
+[[outputs]]
+id = "_8SAk5l4PgnvQpfbl5iSH"
+uri = "file://data/fundamentals.csv"
+type = "table"
+title = "Cleaned fundamentals"
+description = "22 stocks with Market Cap in dollars, percentages preserved as percentage points, and numeric 52-week bounds."
+logical_id = "1d61793e-07d4-40a9-b7da-08cd4cff22ba"
+content_hash = "sha256:a8e12d51944e528ec6f27d70044c7ba252427d18ff31d6345b8100fb3a5d2b93"
+size = 3474
+mtime_ms = 1791686629196
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:5a123519-bfa9-4418-b205-ddee6fdf2ee8/1d61793e-07d4-40a9-b7da-08cd4cff22ba/534365c3-440e-4a70-9de3-94c4ada0d55d"
+storage_version_token = "1791686650669413"
+content_type = "text/csv"

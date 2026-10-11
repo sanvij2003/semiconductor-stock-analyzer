@@ -1,0 +1,30 @@
+kind = "web"
+previewPath = "/"
+title = "Semiconductor Stock Financial Analysis"
+description = "Python Streamlit Company Snapshot for the Week 1 semiconductor financial analysis assignment. Uses the root app.py and existing fundamentals CSV."
+version = "1.0.0"
+id = "artifacts/company-snapshot"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22021
+
+[services.development]
+run = "pnpm --filter @workspace/company-snapshot run dev"
+
+[services.production]
+
+[services.production.build]
+args = ["python3", "-m", "py_compile", "app.py"]
+
+[services.production.run]
+args = ["python3", "-m", "streamlit", "run", "app.py", "--server.address", "0.0.0.0", "--server.port", "22021", "--server.headless", "true", "--browser.gatherUsageStats", "false"]
+
+[services.production.health.startup]
+path = "/_stcore/health"
+
+[services.env]
+PORT = "22021"
+BASE_PATH = "/"
