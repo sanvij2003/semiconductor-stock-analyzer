@@ -24,3 +24,13 @@ request.
 **How to apply:** Use a temporary pre-edit baseline or targeted regression checks
 for the current request. A committed-file comparison is useful only when that
 commit is known to represent the actual starting state.
+
+For Git index changes explicitly requested by the user, the workspace may require
+the command-scoped `DANGEROUSLY_ALLOW_GIT=1` authorization shown by the tool.
+
+**Why:** Even `git rm --cached`, which preserves local files, is an index write
+and triggers the workspace's Git guard.
+
+**How to apply:** Use that authorization only for the exact Git mutation the
+user requested. Do not enable it globally or use it merely to inspect a diff;
+verify local file contents and the resulting tracked-file list afterward.

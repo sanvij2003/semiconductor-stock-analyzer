@@ -1,6 +1,8 @@
 # Semiconductor Stock Financial Analysis
 
-Week 1: Finviz data ingestion and Streamlit financial analysis.
+This Streamlit app analyzes semiconductor stocks through company snapshots, peer comparisons, growth versus valuation, technical trends, and long-term returns.
+The data comes from a Finviz Elite screener export.
+The app was built with Replit Agent for Week 1 of the Mastering Agentic AI course.
 
 ## Open the app
 
@@ -10,12 +12,15 @@ The ticker filter starts empty, which includes all stocks; selections narrow the
 results. Market cap range labels use compact $B/$T amounts while the underlying
 filter still uses the same dollar values. The subtitle reads
 "Data as of Oct 10, 2026, from a Finviz Elite screener export".
-The three tabs share these filters:
+The five tabs share these filters:
 - **Company Snapshot:** select a ticker to view all eleven KPI cards.
 - **Peer Comparison:** sortable table of all matching stocks and four rankings:
   Forward P/E, P/S, Gross Margin and EPS Next Y.
 - **Growth vs Valuation:** Plotly scatter with EPS Next Y on x, Forward P/E on y,
   market-cap bubbles, ticker labels and an unweighted OLS fitted line.
+- **Technicals & Trend:** moving-average scatter, RSI rankings, and 52-week range
+  positions.
+- **Long-term Returns:** grouped Perf YTD, Perf 3Y, and Perf 5Y bars per ticker.
 
 Use **Download filtered data** in the sidebar to save the matching stocks as CSV.
 The download preserves dollar amounts, percentage-point values and blank missing
